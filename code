@@ -1,3 +1,4 @@
+import numpy
 from random import randint
 import datetime
 
@@ -6,7 +7,8 @@ menu = ["1. Add Member", "2. Use points", "3. View all members (password require
 
 print ('\n'.join(menu))
 
-menuSelect = int(input("What do you want do?"))
+UI = input("What do you want to do. pelase press the numbers associated with the actions?")
+def ChoiceFromMenu(
 
 if menuSelect == 1:
     def derpo(dope):
