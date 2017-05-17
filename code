@@ -1,6 +1,6 @@
 import numpy    #This will enable the ability to create a 2D array, beacause you can't do this by default in python
 from random import randint  #Rather than importing the entire module, we only need the "randint()" function
-import datetime
+import datetime     #This will import the current date and time
 
 
 menu = ["1. Add Member", "2. Use points", "3. View all members (password required)", "4. View one member info", "5. Add nights"]
@@ -9,6 +9,20 @@ menu = ["1. Add Member", "2. Use points", "3. View all members (password require
 print ('\n'.join(menu))     #The ".join()" will format the list appropriately when printing
 
 UI = input("What do you want to do. Pelase press the numbers associated with the actions?")
+
+def pass_inp:
+	x = 0
+	attempts = 0
+    for i in range(10):
+		x = input("Please input your password: ")
+		if x != password:
+			x = input("Please try again: ")
+			attempts += 1
+		if attempts = 10:
+			print("Your account has been locked down!!")
+			break 
+        	
+        
 def ChoiceFromMenu(
 
 if menuSelect == 1:
