@@ -1,0 +1,55 @@
+guests = {}.list
+
+DEFINE search{	//This will search for a guest member, and it will display the details of a guest.  
+	x = input{"Put the last name of the guest"}
+	FOR items IN guests{
+		IF guests == x{
+			SEND items.dictionary TO DISPLAY[1]
+			BREAK
+		}
+	}
+}
+DEFINE add_mem{
+	forename = input{"Plese input the guest's forename: "}
+	lastname = input{"Please input the guest's last name: "}
+	nights_booked = 20 	//This will force the next line to run, because the number is over 14.  
+	WHILE nights_booked <= 14{ 
+		nights_booked = input{"Please input the nights booked by the guest: "}
+		IF nights_booked > 14{
+			SEND "Sorry. The maximum nights allowed per booking is 14." TO DISPLAY[1]
+	ID = lastname(0 TO 2)//This will get the last two letters of the last name, RANDOMINT{0 TO 999}//This will pick a random integer from 0 - 999, YEAR(2, 3)
+	//This will get the last two numbersber of the current year. 
+	
+
+
+DEFINE menu{   //This will define the function "menu{}"
+	WHILE x <= 4, and x > 0{ 
+		SEND """
+			1. Search for a member
+			2. Add a member
+			3. Add nights to a member
+			4. View all the members who have are on the reward program
+			Press the numbers displayed to make your choice
+		""" TO DISPLAY[1]
+		
+		INPUT = x //This will store the input as variable "x"
+		
+		IF x <= 4, and x > 0{
+			SEND "You must input a number between 1 and 4!" TO DISPLAY[1] 
+		ELIF x == 1{
+			RUN search{} //This will run the "search{}" function
+		}
+		ELIF x == 2{
+			RUN add_mem{} 
+		}
+		ELIF x == 3{
+			RUN add_nights{}
+		}
+		ELIF X == 4{
+			RUN view_all{}
+		}
+	}
+}
+
+
+	
