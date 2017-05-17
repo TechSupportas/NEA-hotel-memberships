@@ -1,6 +1,6 @@
-import numpy #This imports numpy we 
-from random import randint #This imports the function randint we require for Adding a member
-import datetime #This imports the module datetime from which we will use a few
+from random import randint
+import datetime
+
 
 menu = ["1. Add Member", "2. Use points", "3. View all members (password required)", "4. View one member info", "5. Add nights"]
 
@@ -9,13 +9,15 @@ print ('\n'.join(menu))
 menuSelect = int(input("What do you want do?"))
 
 if menuSelect == 1:
-    userSurname = input("enter your surname")
-    now = datetime.datetime.now()
-    year = now.year
-    randomThing = randint(0, 999)
-    threeDig = "{0:03d}".format(randomThing)
-    memberID = userSurname[:3]+str(year)[:-2]+str(threeDig)
-    print (memberID)
+    def derpo(dope):
+      userSurname = input("enter your surname")
+      now = datetime.datetime.now()
+      year = now.year
+      randomThing = randint(0, 999)
+      threeDig = "{0:03d}".format(randomThing)
+      memberID = userSurname[:3]+str(year)[:-2]+str(threeDig)
+      nightsBook = 
+      dope.append[memberID, userSurname, year, metal, memberPoints]
 if menuSelect == 3:
     password = int(input("enter password"))
     while(True):
@@ -28,4 +30,3 @@ if menuSelect == 3:
                 continue
             else:
                 break
-banananananananas
