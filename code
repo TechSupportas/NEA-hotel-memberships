@@ -1,13 +1,14 @@
-import numpy
-from random import randint
+import numpy    #This will enable the ability to create a 2D array, beacause you can't do this by default in python
+from random import randint  #Rather than importing the entire module, we only need the "randint()" function
 import datetime
 
 
 menu = ["1. Add Member", "2. Use points", "3. View all members (password required)", "4. View one member info", "5. Add nights"]
 
-print ('\n'.join(menu))
 
-UI = input("What do you want to do. pelase press the numbers associated with the actions?")
+print ('\n'.join(menu))     #The ".join()" will format the list appropriately when printing
+
+UI = input("What do you want to do. Pelase press the numbers associated with the actions?")
 def ChoiceFromMenu(
 
 if menuSelect == 1:
