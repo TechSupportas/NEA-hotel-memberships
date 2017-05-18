@@ -21,20 +21,21 @@ def pass_inp:
 		if attempts = 10:
 			print("Your account has been locked down!!")
 			break 
-        	
-        
-def ChoiceFromMenu(
-
-if menuSelect == 1:
-    def derpo(dope):
+ def derpo(dope):
       userSurname = input("enter your surname")
       now = datetime.datetime.now()
       year = now.year
       randomThing = randint(0, 999)
       threeDig = "{0:03d}".format(randomThing)
       memberID = userSurname[:3]+str(year)[:-2]+str(threeDig)
-      nightsBook = 
-      dope.append[memberID, userSurname, year, metal, memberPoints]
+      nightsBook = 0
+      dope.append[memberID, userSurname, year, metal, memberPoints]        	
+      return
+
+def ChoiceFromMenu(
+
+if menuSelect == 1:
+   
 if menuSelect == 3:
     password = int(input("enter password"))
     while(True):
